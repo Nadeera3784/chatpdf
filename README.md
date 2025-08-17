@@ -14,25 +14,25 @@ A complete document conversation system that allows users to:
 
 ## The Technical Journey
 
-### 1. Document Processing Pipeline
+###  Document Processing Pipeline
 I implemented a robust PDF processing system using `pdfplumber` that:
 - Extracts text from PDF pages
 - Uses LangChain's text splitters to create optimal chunks
 - Preserves page references for source attribution
 
-### 2. Embedding & Vector Storage
+###  Embedding & Vector Storage
 The system converts text chunks into vector embeddings:
 - Uses OpenAI's `text-embedding-ada-002` model (1536 dimensions)
 - Stores embeddings in Pinecone vector database
 - Implements semantic search for relevant content retrieval
 
-### 3. LLM Integration
+###  LLM Integration
 For intelligent responses, I integrated:
 - OpenAI's GPT-3.5-turbo for chat completions
 - Context-aware conversations with chat history
 - Source-grounded responses to prevent hallucination
 
-### 4. Modern Web Architecture
+### Modern Web Architecture
 Built with production-ready technologies:
 - **Backend**: Flask REST API with Docker containerization
 - **Frontend**: React with TypeScript and Tailwind CSS
@@ -47,17 +47,17 @@ User Query → Embedding → Similarity Search → Context Retrieval → LLM Res
 
 ## Key Features
 
-### 🔄 **Complete RAG Pipeline**
+### **Complete RAG Pipeline**
 - Document ingestion and preprocessing
 - Vector embeddings with semantic search
 - Context-aware LLM responses
 
-### 📊 **Smart Chunking**
+### **Smart Chunking**
 - Recursive text splitting with overlap
 - Page number preservation
 - Optimal chunk sizes for embeddings
 
-### 🎯 **Accurate Responses**
+### **Accurate Responses**
 - Source attribution with page references
 - Relevance scoring for retrieved content
 - Context-limited responses to prevent hallucination
