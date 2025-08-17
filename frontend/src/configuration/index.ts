@@ -1,3 +1,3 @@
 export const Configuration = {
-	API_URL: `www.google.com`,
+	API_URL: `http://localhost:8080`,
 }; 
